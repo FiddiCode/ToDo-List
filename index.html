@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo-List</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/7570b8853c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-     <div class="head">
-        <h1>ToDO-List</h1>
-        <div class="sign-button">
-        <a href="" >SignUp</a>
-        <a href="">SignIn</a>
+      <div class="head">
+        <div class="head-icon-h1">
+          <img
+            width="35"
+            height="35"
+            src="https://img.icons8.com/external-outline-design-circle/66/external-Todo-List-shopping-and-ecommerce-outline-design-circle.png"
+            alt="todo-list--v1"
+          />
+          <h1>ToDO List</h1>
         </div>
-    </div>
+        <h2>What's Your Plan For Today</h2>
+      </div>
     </header>
 
-    <div class="banner">
-     <h2>What's Your Plan For Today ?</h2>
-    </div>
- <hr>
+    <hr />
     <div class="container">
-        <form class="todo-form">
-            <input type="text"  placeholder="Enter Your Work" class="text">
-            <input type="submit" class="submit" value="Add Todo">
-        </form>
+      <form class="todo-form">
+        <input type="text" placeholder="Enter Your Work" class="input-box" />
+        <button type="submit" class="submit-btn">
+          <i class="fa-solid fa-circle-plus"></i>
+        </button>
+      </form>
 
-        <ul class="todo-list">
-            <li>
-                <span class="task">Do This Do That</span>
-                <div class="todo-buttons">
-                    <button class="done">Done</button>
-                    <button class="Remove">Remove</button>
-                </div>
-            </li>
-        </ul>
+      <ul class="todo-list">
+        <li>
+          <span class="task">First task to do!</span>
+          <div class="todo-buttons">
+            <i class="done fa-solid fa-check" style="color: #000000"></i>
+            <i class="Remove fa-solid fa-trash" style="color: #000000"></i>
+          </div>
+        </li>
+      </ul>
     </div>
-
-    
-</body>
+  </body>
 </html>

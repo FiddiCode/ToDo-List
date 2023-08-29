@@ -1,58 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
- body{
-    background-color:silver;
+    background-color: silver;
 }
 
-.head{
-     height: 10vh;
-     width: 90vw;
-     display: flex;
-     justify-content: space-between;
-    
-}
-.head h1{
-    color: rgb(1, 19, 1);
-    text-decoration:underline;
+.alert {
+    margin-bottom: 1rem;
+    height: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 0, 0.71);
 }
 
-.sign-button a{
-    height: 2vh;
-    width: 5vw;
-    margin: 10px;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    background: rgb(1, 19, 1);
-    border-radius: 5px;
+.alert p {
+    font-size: 0.65rem;
+    font-weight: 600;
+    background-color: transparent;
 }
-.head a:hover{
-    cursor: pointer;
-    background-color: white;
-    color:rgb(1, 19, 1) ;
-    transform: scale(1.1);
-    transition: .3s ease;
-}
-.banner{
-    height: 20vh;
-    width: 100vw;
+
+.head {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    color: rgb(1, 19, 1);
+
 }
-.container{
-    height: 70vh;
+
+.head-icon-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head h1 {
+    color: rgb(1, 19, 1);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.head h2 {
+    color: rgb(1, 19, 1);
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     text-align: center;
 }
 
-.text{
-    height: 6vh;
+.input-box {
     width: 20vw;
     border-radius: 3px;
     outline: none;
@@ -60,55 +66,54 @@
     transition: width .5s ease;
     border: 1px solid rgb(1, 19, 1);
     background-color: rgb(183, 196, 183);
-  
+
 }
-.text:focus{
+
+.input-box:focus {
     width: 40vw;
     background-color: rgb(183, 196, 183);
-    color:rgb(1, 19, 1);
+    color: rgb(1, 19, 1);
 }
-.submit{
-    height: 6vh; 
-    color: white;
-    background-color:rgb(1, 19, 1);
-    padding: 5px;
-    border-radius: 3px;
+
+.submit-btn {
     cursor: pointer;
     transition: .3s ease;
-}
-.submit:hover{
-     transform: scale(1.1);
-}
-
-.todo-list{
-    height: 50vh;
-    width: 90vw;
+    height: 30px;
+    width: 30px;
+    border: none;
 
 }
 
-.todo-list li{
-    height: 6vh;
-    width: 50vw;
+.submit-btn:hover {
+    transform: scale(1.1);
+
+}
+
+.todo-list {
+    padding: 0;
+}
+
+.todo-list li {
+    width: 17rem;
     border-radius: 3px;
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    color: white;
-    background-color:rgb(1, 19, 1) ;
-    margin: 10px 10px 10px 27%;
+    color: rgb(0, 0, 0);
+    margin: 10px;
     align-items: center;
+    border: 1px solid gray;
+    font-size: 1rem;
 }
 
-.todo-buttons button{
-    color:rgb(1, 19, 1);
-    background-color:white;
-    height: 4vh;
-    width: 6vw;
+.todo-buttons i {
+    color: rgb(1, 19, 1);
     border-radius: 3px;
     cursor: pointer;
     transition: .3s ease;
+
 }
-.todo-buttons button:hover{
-    background-color: rgb(183, 196, 183);
+
+.todo-buttons i:hover {
     transform: scale(1.1);
 }
